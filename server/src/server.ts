@@ -22,6 +22,7 @@ app.get('/ads', (request, response) => { // Esse segundo parametro é uma funç�
         {id: 1, name: 'Anúncio 1'},
         {id: 2, name: 'Anúncio 2'},
         {id: 3, name: 'Anúncio 3'},
+        {id: 4, name: 'Anúncio 4'},
     ])
 })
 
@@ -71,4 +72,16 @@ app.listen(3333)
 
     npm install @types/express -D
 
+    ---------------
+    Ferramenta para gerar automaticamente os arquivos de build enquanto está desenvolvendo
+
+    npm install  ts-node-dev -D 
+
+    Em package.json adicionar em scripts
+
+    "dev": "ts-node-dev src/server.ts"
+
+    Por questões de erro foi removido a linha do "modules" e em tsconfig.json foi trocado novamente para "CommonJS" o modulo
+
+    No terminal rodar o projeto com npm run dev
 */ 
