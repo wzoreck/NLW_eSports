@@ -29,3 +29,26 @@ app.get('/ads', (request, response) => { // Esse segundo parametro é uma funç�
 
 // Definindo uma porta para a aplicação localhost, para rodar no terminal (node src/server.mjs)
 app.listen(3333)
+
+
+// Instalações
+/*
+    npm install typescript -D
+    
+    (o -D é porque o Node não reconhece Typescript, será usado apenas para desenvolvimento) (trocar a extensão do arquivo para .ts)
+    
+    - para realizar o casting de Typescript para JS, adicionar nas dependências o seguinte:
+    "scripts": {
+        "build": "tsc"
+    },
+
+    ---------------
+
+    É necessario criar um arquivo de configuração do typescript
+    npx tsc --init
+
+    ---------------
+
+    Ao executar (node run build) é criado um arquivo com o mesmo nome .js que deve ser executado com (node src/server.js)
+
+*/ 
