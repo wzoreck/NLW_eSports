@@ -84,4 +84,12 @@ app.listen(3333)
     Por questões de erro foi removido a linha do "modules" e em tsconfig.json foi trocado novamente para "CommonJS" o modulo
 
     No terminal rodar o projeto com npm run dev
+
+    ------------------------- REACT -------------------------
+    Para a criação do front-end com React, será usado uma ferramenta chamada vite (https://vitejs.dev) que facilita na criação do projeto e realiza a compilação do código JS para uma versão que o navegador de internet entenda
+
+    No terminal coltar um diretório para trás cd..
+    e executar: npm create vite@latest
+
+    Nomear o projeto, informar React e Typescript
 */ 
