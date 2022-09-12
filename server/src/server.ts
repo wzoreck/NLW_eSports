@@ -31,8 +31,11 @@ app.get('/ads', (request, response) => { // Esse segundo parametro é uma funç�
 app.listen(3333)
 
 
-// Instalações
+// Passos
 /*
+    npm install express
+    ---------------
+
     npm install typescript -D
     
     (o -D é porque o Node não reconhece Typescript, será usado apenas para desenvolvimento) (trocar a extensão do arquivo para .ts)
@@ -50,5 +53,22 @@ app.listen(3333)
     ---------------
 
     Ao executar (node run build) é criado um arquivo com o mesmo nome .js que deve ser executado com (node src/server.js)
+
+    ---------------
+
+    Em tsconfig.json foi informado o diretório raiz da aplicação, e o diretório para os arquivos .js gerados do .ts
+    
+    "rootDir": "./src"
+    "outDir": "./build"
+
+    ---------------
+
+    Descomentado "moduleResolution": "node", em tsconfig.json
+
+    ---------------
+
+    Para bibliotecas que não são escritas em Typescript é necessário instalar um pacote adicional, vai aparecer o simbolo (DT) no pacote em npmjs.com/package/express (express o pacote exemplo)
+
+    npm install @types/express -D
 
 */ 
