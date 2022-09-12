@@ -92,4 +92,6 @@ app.listen(3333)
     e executar: npm create vite@latest
 
     Nomear o projeto, informar React e Typescript
+
+    No diretório do projeto web (React) executar: npm install
 */ 
