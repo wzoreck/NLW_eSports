@@ -9,3 +9,6 @@ devem ser nomeados com a primeira letra maiúscula
 App está sendo importado de dentro do arquivo App.tsx, que possui uma função
 similar a um método construtor (mesmo nome App) e nela é retornada o HTML a
 ser montado no index.html . Similiar aos arquivos parciais do Django
+
+
+- Imagens que estão sendo chamadas diretamente ex: /img.png estão presentes na pasta public.
