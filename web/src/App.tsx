@@ -3,32 +3,27 @@
 // React é um conglomerado de funções que retornam HTML, CSS e JS!
 
 /* Principais conceitos do React Componentes / Propriedades
+   
    Componente: é uma função que retorna um conjunto de tags HTML, podem ser reaproveitados.
-   Propriedade: permite trazer diferênciação entre cada 
-
-
+   
+   Propriedade: permite trazer diferênciação entre cada componente
 */
 
-interface ButtonProps {
-  title: string;
-}
-
-function Button(props: ButtonProps) {
-  return (
-    <button>{props.title}</button> // Se usa chaves quando quer incluir JS em um componente HTML
-  )
-}
+import './styles/main.css'
 
 function App() {
   //return <h1>Hello World</h1>
   return (
-    <div>
-      <Button title="Enviar 1" />
-      <Button title="Enviar 2" />
-      <Button title="Enviar 3" />
-      <Button title="Enviar 4" />
+    <div className="w-8 h-8 bg-violet-500">
     </div>
   )
 }
 
 export default App
+
+
+/*
+- Instalar Tail Wind CSS (https://tailwindcss.com)
+  npm install -D tailwindcss postcss autoprefixer
+  npx tailwindcss init -p
+*/
